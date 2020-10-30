@@ -27,6 +27,7 @@ function onBtnClickedPartidas(id) {
         /* '<object data="pdf/partida-direta.pdf" type="application/pdf">' +
             '<p>Seu navegador não tem um plugin pra PDF</p>'+
         '</object>'+ */
+        '<p><b> Dicas: </b></p> <p> - Clique 2 vezes no detalhe em que deseja ver melhor</p> <p>- Visualize em tela cheia</p>' +
         '<h5>Visualização 3D:</h5>' + lista_partidas[id - 1].link +
         '<h3 class=""></h3>' +
 /*         '<h5 class="card-title">' + lista_partidas[id-1].nome + '</h5>'+

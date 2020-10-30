@@ -3,47 +3,47 @@ var iframeBotoeiras = new Array()
 var iframeDiversos = new Array()
 
 iframeProtecao[0] = '<div id="iframe">' +
-    '<iframe title="A 3D model" width="100%" height="100%" src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968b2ec00f4f9ca38f3?mode=embed"></iframe>' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968b2ec00f4f9ca38f3?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 iframeProtecao[1] = '<div id="iframe">' +
-    '<iframe title="A 3D model" width="100%" height="100%" src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd96822bf798e652062d8?mode=embed"></iframe>' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd96822bf798e652062d8?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 iframeProtecao[2] = '<div id="iframe">' +
-    '<iframe title="A 3D model" width="100%" height="100%" src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968e27800cf181b547e?mode=embed"></iframe>' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968e27800cf181b547e?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 iframeProtecao[3] = '<div id="iframe">' +
-    '<iframe title="A 3D model" width="100%" height="100%" src=""https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9686e09b38adb85f66d?mode=embed"></iframe>' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968a4301ad0921a224b?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 iframeProtecao[4] = '<div id="iframe">' +
-    '<iframe title="A 3D model" width="100%" height="100%" src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968162a02fb77ecb44c?mode=embed"></iframe>' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968162a02fb77ecb44c?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 var descricaoProtecao = new Array()
 
 iframeBotoeiras[0] = '<div id="iframe">' +
-    '<iframe title="A 3D model" width="100%" height="100%" src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968f759dd6fe4629df8?mode=embed"></iframe>' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968f759dd6fe4629df8?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 iframeBotoeiras[1] = '<div id="iframe">' +
-    '<iframe title="A 3D model" width="100%" height="100%" src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9688d5a03a372657fe3?mode=embed"></iframe>' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9688d5a03a372657fe3?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 iframeBotoeiras[2] = '<div id="iframe">' +
-    '<iframe title="A 3D model" width="100%" height="100%" src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968f6faa2e29cc3bc77?mode=embed"></iframe>' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968f6faa2e29cc3bc77?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 var descricaoBotoeiras = new Array()
 
 iframeDiversos[0] = '<div id="iframe">' +
-    '<iframe title="A 3D model" width="100%" height="100%" src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968db81250b2b72fe12?mode=embed"></iframe>' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968db81250b2b72fe12?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 iframeDiversos[1] = '<div id="iframe">' +
-    '<iframe title="A 3D model" width="100%" height="100%" src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9683ce2db965172dff8?mode=embed"></iframe>' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9683ce2db965172dff8?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 iframeDiversos[2] = '<div id="iframe">' +
-    '<iframe title="A 3D model" width="100%" height="100%" src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9688be970ed248de13a?mode=embed"></iframe>' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9688be970ed248de13a?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 iframeDiversos[3] = '<div id="iframe">' +
-    '<iframe title="A 3D model" width="100%" height="100%" src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9685d36996dff0a1969?mode=embed"></iframe>' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9685d36996dff0a1969?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 iframeDiversos[4] = '<div id="iframe">' +
-    '<iframe title="A 3D model" width="100%" height="100%" src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968bcbc15aa22a7f65e?mode=embed"></iframe>' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968bcbc15aa22a7f65e?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 var descricaoDiversos = new Array()
 
@@ -188,6 +188,7 @@ function ver_3d(tipo, id) {
     var saida = '<div class="card mb-3" id="card-partidas">' +
     '<div class="card-body">' +
     '<h3 class="card-title">' + lista[id].nome + '</h3>' +
+    '<p><b> Dicas: </b></p> <p> - Clique 2 vezes no detalhe em que deseja ver melhor</p> <p>- Visualize em tela cheia</p>' +
     lista[id].link +
     '<h3 class=""></h3>' +
     '<h5 class="card-title">' + lista[id].nome + '</h5>'+
