@@ -188,6 +188,7 @@ function ver_3d(tipo, id) {
     var saida = '<div class="card mb-3" id="card-partidas">' +
     '<div class="card-body">' +
     '<h3 class="card-title">' + lista[id].nome + '</h3>' +
+    '<p><b> Dicas: </b></p> <p> - Clique 2 vezes no detalhe em que deseja ver melhor</p> <p>- Visualize em tela cheia</p>' +
     lista[id].link +
     '<h3 class=""></h3>' +
     '<h5 class="card-title">' + lista[id].nome + '</h5>'+
