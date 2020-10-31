@@ -39,6 +39,18 @@ h4 {
     color: white;
 }
 
+#a_header {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+}
+#a_header:hover {
+    text-decoration: none;
+    text-shadow: 0.5px 0.5px 0.5px rgb(4, 0, 255);
+    color: rgb(246, 246, 255);
+}
+
 /* ----------  3D Visualização ------------ */
 /*                                    */
 
@@ -84,7 +96,7 @@ h4 {
 
 .cards {
     background-color: rgba(180, 180, 180, 0.274);
-    padding: 10px;
+/*     padding: 5px; */
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -95,14 +107,14 @@ h4 {
     margin-left: 20px;
 }
 
-
-
 #card_disp_und {
     background-color: white;
+   /*  padding: 50px; */
     min-width: 200px;
     max-width: 300px;
-    
+   /*  transform: scale(0.7); */
 }
+
 #card_disp_und:hover {
     transition:  0.7s;
     background-color: rgb(52,58,64);

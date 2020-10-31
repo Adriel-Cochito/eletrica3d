@@ -1,6 +1,6 @@
 
 var iframePartida = new Array()
-iframePartida[0] = '<div class="card-img-top" > <iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9681b50363861215090?mode=embed"' +
+iframePartida[0] = '<div class="card-img-top" > <iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd96827566f5a8a40cb29?mode=embed"' +
     'width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe> </div';
 
 var descricaoPartida = new Array()
