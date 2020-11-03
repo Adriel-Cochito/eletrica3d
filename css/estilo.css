@@ -83,7 +83,13 @@ h4 {
     margin: 10px;
 }
 
-.diagrama {
+.diagrama_img {
+    width: 99%;
+    height: auto;
+    margin: 0px;
+    border: 2px solid #616161;
+}
+.diagrama_pdf {
     width: 99%;
     height: 500px;
     margin: 0px;

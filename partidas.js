@@ -24,8 +24,8 @@ function onBtnClickedPartidas(id) {
         '<h3 class="card-title">' + lista_partidas[id-1].nome + '</h3>' +
         '<p class="card-text"><b> Descrição: </b>' + lista_partidas[id-1].descricao + '</p>' + 
         /* '<div class="diagrama"><h5> Diagrama:</h5> <img  src="img/diagramas/pd_dg.jpg" class="card-img" alt="..."></div>'+ */
-        ' <h5> Diagrama:</h5> <object class="diagrama" data="img/diagramas/partida_direta.pdf" type="application/pdf">' +
-            '<div class="diagrama"><h5> Diagrama:</h5> <img  src="img/diagramas/pd_dg.jpg" class="card-img" alt="..."></div>'+
+        ' <h5> Diagrama:</h5> <object class="diagrama_pdf" data="img/diagramas/partida_direta.pdf" type="application/pdf">' +
+            '<div class="diagrama_img"><h5> Diagrama:</h5> <img  src="img/diagramas/pd_dg.jpg" class="card-img" alt="..."></div>'+
         '</object>'+
         '<p><b> Dicas: </b></p> <p> - Clique 2 vezes no detalhe em que deseja ver melhor</p> <p>- Visualize em tela cheia</p>' +
         '<h5>Visualização 3D:</h5>' + lista_partidas[id - 1].link +
