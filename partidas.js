@@ -23,7 +23,7 @@ function onBtnClickedPartidas(id) {
         '<div class="card-body">' +
         '<h3 class="card-title">' + lista_partidas[id-1].nome + '</h3>' +
         '<p class="card-text"><b> Descrição: </b>' + lista_partidas[id-1].descricao + '</p>' + 
-        '<div class="diagrama"><h5> Diagrama:</h5> <img  src="img/diagramas/pd_dg.png" class="card-img" alt="..."></div>'+
+        '<div class="diagrama"><h5> Diagrama:</h5> <img  src="img/diagramas/pd_dg.jpg" class="card-img" alt="..."></div>'+
         /* '<object data="pdf/partida-direta.pdf" type="application/pdf">' +
             '<p>Seu navegador não tem um plugin pra PDF</p>'+
         '</object>'+ */
