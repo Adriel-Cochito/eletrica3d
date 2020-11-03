@@ -45,6 +45,9 @@ iframeDiversos[3] = '<div id="iframe">' +
 iframeDiversos[4] = '<div id="iframe">' +
     '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968bcbc15aa22a7f65e?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
+iframeDiversos[5] = '<div id="iframe">' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968e4c4aa5c22c6df40?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
+    '</div>';
 var descricaoDiversos = new Array()
 
 descricaoProtecao[0] = "É um dispositivo de proteção";
@@ -62,6 +65,7 @@ descricaoDiversos[1] = "É um motor de indução trifásico";
 descricaoDiversos[2] = "É um conector simples a parafusos";
 descricaoDiversos[3] = "Controla um motor através do controle da tensão de saída";
 descricaoDiversos[4] = "Controlador Lógico Programável, usado para criar controles automatizados eletrônicamente programáveis";
+descricaoDiversos[5] = "Transformador de Tensão 220V - 24V, para tensão reduzida para comando";
 
 
 const lista_protecao = [   
@@ -81,7 +85,9 @@ const lista_diversa = [
     { id: 1, tipo: "Trifásico", nome: 'Motor', link: iframeDiversos[1], img: "motor.png", lista: 2, descricao: descricaoDiversos[1]},
     { id: 2, tipo: "Conexão", nome: 'Conector Sindal', link: iframeDiversos[2], img: "conector_sindal.jpg", lista: 2, descricao: descricaoDiversos[2]},
     { id: 3, tipo: "Soft Starter", nome: 'SSW 05', link: iframeDiversos[3], img: "ssw_05.jpg", lista: 2, descricao: descricaoDiversos[3]},
-    { id: 4, tipo: "PLC", nome: 'Logo Siemens', link: iframeDiversos[4], img: "logo_siemens.png", lista: 2, descricao: descricaoDiversos[4]}
+    { id: 4, tipo: "PLC", nome: 'Logo Siemens', link: iframeDiversos[4], img: "logo_siemens.png", lista: 2, descricao: descricaoDiversos[4]},
+    { id: 5, tipo: "Transformador", nome: 'Transformador 220v-24V', link: iframeDiversos[5], img: "transformador.jpg", lista: 2, descricao: descricaoDiversos[5]}
+
 ];
 
 /* const lista_completa = []

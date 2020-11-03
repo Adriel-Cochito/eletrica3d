@@ -1,6 +1,6 @@
 
 var iframePartida = new Array()
-iframePartida[0] = '<div class="card-img-top" > <iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd96827566f5a8a40cb29?mode=embed"' +
+iframePartida[0] = '<div class="card-img-top" > <iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968c347b3b8bb9dc677?mode=embed"' +
     'width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe> </div';
 
 var descricaoPartida = new Array()
@@ -23,7 +23,7 @@ function onBtnClickedPartidas(id) {
         '<div class="card-body">' +
         '<h3 class="card-title">' + lista_partidas[id-1].nome + '</h3>' +
         '<p class="card-text"><b> Descrição: </b>' + lista_partidas[id-1].descricao + '</p>' + 
-        '<div class="diagrama"><h5> Diagrama:</h5> <img  src="img/diagramas/pd_dg.png" class="card-img" alt="..."></div>'+
+        '<div class="diagrama"><h5> Diagrama:</h5> <img  src="img/diagramas/pt_dg.jpg" class="card-img" alt="..."></div>'+
         /* '<object data="pdf/partida-direta.pdf" type="application/pdf">' +
             '<p>Seu navegador não tem um plugin pra PDF</p>'+
         '</object>'+ */
