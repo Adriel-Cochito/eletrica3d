@@ -1,6 +1,6 @@
 
 var iframePartida = new Array()
-iframePartida[0] = '<div class="card-img-top" > <iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd96886a8d8cf1efd3e29?mode=embed"' +
+iframePartida[0] = '<div class="card-img-top" > <iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9685931fa0e55ab8d55?mode=embed"' +
     'width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe> </div';
 
 var descricaoPartida = new Array()
@@ -27,7 +27,7 @@ function onBtnClickedPartidas(id) {
         ' <h5> Diagrama:</h5> <object class="diagrama_pdf" data="img/diagramas/partida_direta.pdf" type="application/pdf">' +
             '<div class="diagrama_img"> <img  src="img/diagramas/pd_dg.jpg" class="card-img" alt="..."></div>'+
         '</object>'+
-        '<p><b> Dicas: </b></p> <p> - Clique 2 vezes no detalhe em que deseja ver melhor</p> <p>- Visualize em tela cheia</p>' +
+        '<p><b> Dicas: </b></p> <p> - Clique 2 vezes no componente que deseja ver melhor para girar a câmera em seu redor</p> <p>- Visualize em tela cheia</p>' +
         '<h5>Visualização 3D:</h5>' + lista_partidas[id - 1].link +
         '<h3 class=""></h3>' +
 /*         '<h5 class="card-title">' + lista_partidas[id-1].nome + '</h5>'+
