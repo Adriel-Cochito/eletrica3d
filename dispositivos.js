@@ -1,5 +1,6 @@
 var iframeProtecao = new Array()
 var iframeBotoeiras = new Array()
+var iframeSinalizacao = new Array()
 var iframeDiversos = new Array()
 
 iframeProtecao[0] = '<div id="iframe">' +
@@ -30,6 +31,17 @@ iframeBotoeiras[2] = '<div id="iframe">' +
     '</div>';
 var descricaoBotoeiras = new Array()
 
+iframeSinalizacao[0] = '<div id="iframe">' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968df27a3b4d332264d?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
+    '</div>';
+iframeSinalizacao[1] = '<div id="iframe">' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd96855774f5de5913b0e?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
+    '</div>';
+iframeSinalizacao[2] = '<div id="iframe">' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9682336cb4982af9187?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
+    '</div>';
+var descricaoSinalizacao = new Array()
+
 iframeDiversos[0] = '<div id="iframe">' +
     '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968db81250b2b72fe12?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
@@ -48,6 +60,9 @@ iframeDiversos[4] = '<div id="iframe">' +
 iframeDiversos[5] = '<div id="iframe">' +
     '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968e4c4aa5c22c6df40?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
+iframeDiversos[6] = '<div id="iframe">' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9681e97d3ce93ef74d0?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
+    '</div>';
 var descricaoDiversos = new Array()
 
 descricaoProtecao[0] = "É um dispositivo de proteção";
@@ -60,12 +75,18 @@ descricaoBotoeiras[0] = "Botão de comando que retorna por mola a posição dos 
 descricaoBotoeiras[1] = "Possui posições que se mantem mecanicamente quando comutado";
 descricaoBotoeiras[2] = "Botoeira de soco com trava, para manter seu acionamento de segurança e emergência";
 
+descricaoSinalizacao[0] = "Sinalizador visual / sonoro";
+descricaoSinalizacao[1] = "Lâmpada de LED para indicação visual";
+descricaoSinalizacao[2] = "Torre de sinalização para indicação visual";
+
 descricaoDiversos[0] = "Controla um motor trifásico através do controle de frequência de saída";
 descricaoDiversos[1] = "É um motor de indução trifásico";
 descricaoDiversos[2] = "É um conector simples a parafusos";
 descricaoDiversos[3] = "Controla um motor através do controle da tensão de saída";
 descricaoDiversos[4] = "Controlador Lógico Programável, usado para criar controles automatizados eletrônicamente programáveis";
 descricaoDiversos[5] = "Transformador de Tensão 220V - 24V, para tensão reduzida para comando";
+descricaoDiversos[6] = "Temporizador para controle de comandos";
+
 
 
 const lista_protecao = [   
@@ -80,13 +101,19 @@ const lista_botoeira = [
     { id: 1, tipo: "Botoeira", nome: 'Chave Seletora',link: iframeBotoeiras[1], img: "chave_seletora.jpg", lista: 1, descricao: descricaoBotoeiras[1]},
     { id: 2, tipo: "Botoeira", nome: 'Botoeira de Emergência', link: iframeBotoeiras[2], img: "botoeira_emergencia.jpg", lista: 1, descricao: descricaoBotoeiras[2]}
 ];
+const lista_sinalizacao = [
+    { id: 0, tipo: "Sinalização", nome: 'Sinalizador Sonoro Buzzer', link: iframeSinalizacao[0], img: "buzzer.jpg", lista: 3, descricao: descricaoSinalizacao[0]},
+    { id: 1, tipo: "Sinalização", nome: 'Lâmpada LED', link: iframeSinalizacao[1], img: "lampada_led.jpg", lista: 3, descricao: descricaoSinalizacao[1]},
+    { id: 2, tipo: "Sinalização", nome: 'Torre de sinalização', link: iframeSinalizacao[2], img: "torre_sinalizacao.jpg", lista: 3, descricao: descricaoSinalizacao[2]}
+];
 const lista_diversa = [
     { id: 0, tipo: "Inversor de Frequência", nome: 'CFW-10', link: iframeDiversos[0], img: "cfw_10.png", lista: 2, descricao: descricaoDiversos[0]},
     { id: 1, tipo: "Trifásico", nome: 'Motor', link: iframeDiversos[1], img: "motor.png", lista: 2, descricao: descricaoDiversos[1]},
     { id: 2, tipo: "Conexão", nome: 'Conector Sindal', link: iframeDiversos[2], img: "conector_sindal.jpg", lista: 2, descricao: descricaoDiversos[2]},
     { id: 3, tipo: "Soft Starter", nome: 'SSW 05', link: iframeDiversos[3], img: "ssw_05.jpg", lista: 2, descricao: descricaoDiversos[3]},
     { id: 4, tipo: "PLC", nome: 'Logo Siemens', link: iframeDiversos[4], img: "logo_siemens.png", lista: 2, descricao: descricaoDiversos[4]},
-    { id: 5, tipo: "Transformador", nome: 'Transformador 220v-24V', link: iframeDiversos[5], img: "transformador.jpg", lista: 2, descricao: descricaoDiversos[5]}
+    { id: 5, tipo: "Transformador", nome: 'Transformador 220v-24V', link: iframeDiversos[5], img: "transformador.jpg", lista: 2, descricao: descricaoDiversos[5]},
+    { id: 6, tipo: "Temporizador ", nome: 'Temporizador JTRB', link: iframeDiversos[6], img: "temporizador_jtrb.jpg", lista: 2, descricao: descricaoDiversos[6]}
 
 ];
 
@@ -98,6 +125,7 @@ const lista_diversa = [
 var protecao = new Array();
 var botoeiras = new Array();
 var diversos = new Array();
+var sinalizacao = new Array();
 var todos = new Array();
 var r1;
 var r2;
@@ -120,6 +148,7 @@ for (let i = 0; i < lista.length; i++) {
 
 criar_html(lista_botoeira, botoeiras);
 criar_html(lista_protecao, protecao);
+criar_html(lista_sinalizacao, sinalizacao);
 criar_html(lista_diversa, diversos);
 
 function fechar(lista) {
@@ -135,6 +164,10 @@ function juntarListas() {
     for (let i = 0; i < protecao.length; i++) {
         let x = todos.length
         todos[x] = protecao[i];
+    }
+    for (let i = 0; i < sinalizacao.length; i++) {
+        let x = todos.length
+        todos[x] = sinalizacao[i];
     }
     for (let i = 0; i < diversos.length; i++) {
         let x = todos.length
@@ -167,6 +200,9 @@ function onBtnClickedProtecao() {
 function onBtnClickedBotoeira() {
     document.getElementById('r1').innerHTML = fechar(botoeiras);
 };
+function onBtnClickedSinalizacao() {
+    document.getElementById('r1').innerHTML = fechar(sinalizacao);
+};
 function onBtnClickedDiversos() {
     document.getElementById('r1').innerHTML = fechar(diversos);
 };
@@ -175,6 +211,7 @@ juntarListas()
 document.getElementById('todos').onclick = onBtnClickedtodos;
 document.getElementById('protecao').onclick = onBtnClickedProtecao;
 document.getElementById('botoeiras').onclick = onBtnClickedBotoeira;
+document.getElementById('sinalizacao').onclick = onBtnClickedSinalizacao;
 document.getElementById('diversos').onclick = onBtnClickedDiversos;
 
 function pega_lista(tipo) {
@@ -184,6 +221,8 @@ function pega_lista(tipo) {
         return lista_botoeira;
     } else if(tipo == 2) {
         return lista_diversa;
+    } else if(tipo == 3) {
+        return lista_sinalizacao;
     };
 }
 

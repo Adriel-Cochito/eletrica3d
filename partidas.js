@@ -4,15 +4,19 @@ iframePartida[0] = '<div class="card-img-top" > <iframe src="https://myhub.autod
     'width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe> </div';
 iframePartida[1] = '<div class="card-img-top" > <iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9687d221b5fe71e4ef0?mode=embed"' +
     'width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe> </div';
+iframePartida[2] = '<div class="card-img-top" > <iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968797257f24644b963?mode=embed"' +
+    'width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe> </div';
 
 var descricaoPartida = new Array()
 descricaoPartida[0] = "É uma partida simples, com botões Liga e Desliga, além de outros componentes de proteção";
 descricaoPartida[1] = "É uma partida direta com reversão. A reversão neste caso só ocorre após o desligamento do equipamento, para que o motor gire no sentido oposto";
+descricaoPartida[2] = "É uma partida Estrela-triângulo. O motor é iniciado com fechamento das bobinas em Estrela, para diminuir a tensão e corrente de pico na partida, e depois de temporizado muda automaticamente para Triângulo, para potência nominal";
 
 
 const lista_partidas = [
     { id: 1, nome: 'Partida direta', link: iframePartida[0], descricao: descricaoPartida[0], diagrama: "pd_dg" },
-    { id: 2, nome: 'Partida direta com reversão Intercalada', link: iframePartida[1], descricao: descricaoPartida[1], diagrama: "pd_rev_intercalada_dg"  }
+    { id: 2, nome: 'Partida direta com reversão Intercalada', link: iframePartida[1], descricao: descricaoPartida[1], diagrama: "pd_rev_intercalada_dg"  },
+    { id: 3, nome: 'Partida estrela triângulo temporizada', link: iframePartida[2], descricao: descricaoPartida[2], diagrama: "part_estrela_triangulo_temp"  }
 ];
 
 var partidas = new Array();

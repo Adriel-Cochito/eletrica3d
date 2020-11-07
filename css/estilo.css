@@ -102,7 +102,8 @@ h4 {
 
 .cards {
     background-color: rgba(180, 180, 180, 0.274);
-/*     padding: 5px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-left: 10px;
     margin-right: 10px;
 }
