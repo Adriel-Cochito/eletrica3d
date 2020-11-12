@@ -38,7 +38,7 @@ iframeSinalizacao[1] = '<div id="iframe">' +
     '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd96855774f5de5913b0e?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 iframeSinalizacao[2] = '<div id="iframe">' +
-    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9682336cb4982af9187?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9680f902256bda9e78a?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
 var descricaoSinalizacao = new Array()
 
@@ -71,7 +71,7 @@ descricaoProtecao[2] = "É um borne de conexão que possui um fusível de prote�
 descricaoProtecao[3] = "É um tipo de fusível de proteção de altas correntes elétricas";
 descricaoProtecao[4] = "É um relé de proteção que vai acoplado a parte inferior de um contator, oferecendo proteções de sobrecorrente ao motor, com contatos auxiliares";
 
-descricaoBotoeiras[0] = "Botão de comando que retorna por mola a posição dos conattos ao desaciona-lo";
+descricaoBotoeiras[0] = "Botão de comando que retorna por mola a posição dos contatos ao desaciona-lo";
 descricaoBotoeiras[1] = "Possui posições que se mantem mecanicamente quando comutado";
 descricaoBotoeiras[2] = "Botoeira de soco com trava, para manter seu acionamento de segurança e emergência";
 
@@ -141,6 +141,7 @@ for (let i = 0; i < lista.length; i++) {
     '<p> <b>Tipo: </b> '+ lista[i].tipo +' </p> <hr>' +
     '<p class="card-text"><b> Descrição: </b>' + lista[i].descricao + '</p>' +
     '</div>' +
+    '<p class="ver3d"><a class="btn btn-lg btn-primary"  role="button">Ver 3D</a></p>' +
     '</div>' +
     '</div>'
 );
