@@ -63,6 +63,9 @@ iframeDiversos[5] = '<div id="iframe">' +
 iframeDiversos[6] = '<div id="iframe">' +
     '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9681e97d3ce93ef74d0?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
+iframeDiversos[7] = '<div id="iframe">' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9685b8f47edcd60eb2d?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
+    '</div>';
 var descricaoDiversos = new Array()
 
 descricaoProtecao[0] = "É um dispositivo de proteção";
@@ -86,6 +89,7 @@ descricaoDiversos[3] = "Controla um motor através do controle da tensão de sa�
 descricaoDiversos[4] = "Controlador Lógico Programável, usado para criar controles automatizados eletrônicamente programáveis";
 descricaoDiversos[5] = "Transformador de Tensão 220V - 24V, para tensão reduzida para comando";
 descricaoDiversos[6] = "Temporizador para controle de comandos";
+descricaoDiversos[7] = "Com todas as peças internas e externas em uma montagem";
 
 
 
@@ -108,12 +112,13 @@ const lista_sinalizacao = [
 ];
 const lista_diversa = [
     { id: 0, tipo: "Inversor de Frequência", nome: 'CFW-10', link: iframeDiversos[0], img: "cfw_10.png", lista: 2, descricao: descricaoDiversos[0]},
-    { id: 1, tipo: "Trifásico", nome: 'Motor', link: iframeDiversos[1], img: "motor.png", lista: 2, descricao: descricaoDiversos[1]},
+    { id: 1, tipo: "Motor Trifásico", nome: 'Motor', link: iframeDiversos[1], img: "motor.png", lista: 2, descricao: descricaoDiversos[1]},
     { id: 2, tipo: "Conexão", nome: 'Conector Sindal', link: iframeDiversos[2], img: "conector_sindal.jpg", lista: 2, descricao: descricaoDiversos[2]},
     { id: 3, tipo: "Soft Starter", nome: 'SSW 05', link: iframeDiversos[3], img: "ssw_05.jpg", lista: 2, descricao: descricaoDiversos[3]},
     { id: 4, tipo: "PLC", nome: 'Logo Siemens', link: iframeDiversos[4], img: "logo_siemens.png", lista: 2, descricao: descricaoDiversos[4]},
     { id: 5, tipo: "Transformador", nome: 'Transformador 220v-24V', link: iframeDiversos[5], img: "transformador.jpg", lista: 2, descricao: descricaoDiversos[5]},
-    { id: 6, tipo: "Temporizador ", nome: 'Temporizador JTRB', link: iframeDiversos[6], img: "temporizador_jtrb.jpg", lista: 2, descricao: descricaoDiversos[6]}
+    { id: 6, tipo: "Temporizador ", nome: 'Temporizador JTRB', link: iframeDiversos[6], img: "temporizador_jtrb.jpg", lista: 2, descricao: descricaoDiversos[6]},
+    { id: 7, tipo: "Motor Trifásico ", nome: 'Motor completo', link: iframeDiversos[7], img: "motor_explode.jpg", lista: 2, descricao: descricaoDiversos[7]}
 
 ];
 
