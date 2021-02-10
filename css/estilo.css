@@ -76,7 +76,16 @@ h4 {
 
 .titulos_home {
     color: white;
-    text-shadow: black 0.1em 0.1em 0.2em
+    text-shadow: black 0.11em 0.11em 0.1em;
+
+}
+
+.carousel-caption {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    background-color: rgba(90, 90, 90, 0.493);
+    border-radius: 10px;
 }
 
 /* ----------  PARTIDAS HTML ------------ */

@@ -1,0 +1,127 @@
+
+img {
+    top: 100px;
+    bottom: 100px;
+}
+
+/* #teste1 {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(19, 255, 51, 0.5);
+    left: 30%;
+    bottom: 300px;
+} */
+
+/* Div maior : */
+#c55,#c57,#c59,#c53,#c51,#c49,#c47,#c45,#c43,#c46,#c41,#c39,#c40,#c37,#c38,#c32,#c33,#c34,#c13,#c14,#c15,#c30,#c28,#c16,#c17,#c18,#c19,#c20,#c22,#c24,#c25,#c26{width: 30px; height: 30px;}
+
+
+/* Dj p/Contator */
+#c1{right: -270px;bottom: 420px;}
+#c2{right: -250px;bottom: 149px;}
+
+#c3{right: -297px;bottom: 420px;}
+#c4{right: -273px;bottom: 149px;}
+
+#c5{right: -327px;bottom: 420px;}
+#c6{right: -295px;bottom: 149px;}
+
+
+/* RT p/Borne */
+#c7{right: -488px;bottom: 376px;}
+#c8{right: -497px;bottom: 120px;}
+
+#c9{right: -512px;bottom: 376px;}
+#c10{right: -507px;bottom: 120px;}
+
+#c11{right: -537px;bottom: 377px;}
+#c12{right: -517px;bottom: 121px;}
+
+
+/* Alim. Dj Comando */
+#c13{right: -100px;bottom: 407px;}
+#c14{right: -455px;bottom: 405px;}
+
+#c15{right: -139px;bottom: 407px;}
+#c16{right: -493px;bottom: 406px;}
+
+
+/* Dj2 p/ TF */
+#c17{right: -485px;bottom: 279px;}
+#c18{right: -627px;bottom: 312px;}
+
+#c19{right: -525px;bottom: 279px;}
+#c20{right: -645px;bottom: 312px;}
+
+/* TF p/ DJ3 */
+#c21{right: -649px;bottom: 282px;}
+#c22{right: -745px;bottom: 399px;}
+
+#c23{right: -663px;bottom: 282px;}
+#c24{right: -779px;bottom: 399px;}
+
+
+/* DJ3 p/ RT e Borne*/
+#c25{right: -105px;bottom: 282px;}
+#c26{right: -908px;bottom: 851px;}
+
+#c27{right: -236px;bottom: 107px;}
+#c28{right: -788px;bottom: 926px;}
+
+#c29{right: -356px;bottom: 109px;}
+#c30{right: -820px;bottom: 926px;}
+
+
+/* RT Ligacoes */
+#c31{right: -348px;bottom: 59px;}
+#c32{right: -290px;bottom: 517px;}
+
+#c33{right: -265px;bottom: 517px;}
+#c34{right: -275px;bottom: 517px;}
+
+
+/* Jump */
+#c35{right: -366px;bottom: 59px;}
+#c36{right: -472px;bottom: 60px;}       
+
+
+/* K1 */
+#c37{right: -341px;bottom: 516px;}      
+#c38{right: -241px;bottom: 763px;}      
+
+#c39{right: -344px;bottom: 762px;}      
+#c40{right: -241px;bottom: 763px;}      
+
+#c41{right: -344px;bottom: 762px;}      /* K1-43 */
+#c42{right: -352px;bottom: 61px;}       /* x1-10 */
+
+#c43{right: -234px;bottom: 762px;}     
+#c44{right: -372px;bottom: 61px;}  
+
+#c45{right: -222px;bottom: 827px;}      
+#c46{right: -184px;bottom: 673px;}      
+
+#c47{right: -222px;bottom: 827px;}      
+#c48{right: -390px;bottom: 61px;}       /* x1-12 */
+
+#c49{right: -249px;bottom: 672px;}      /* k1-22 */
+#c50{right: -408px;bottom: 61px;}     /* x1-13 */
+
+#c51{right: -325px;bottom: 672px;}
+#c52{right: -425px;bottom: 61px;}     /* x1-14 */
+
+#c53{right: -212px;bottom: 504px;}
+#c54{right: -441px;bottom: 62px;}     /* x1-15 */
+
+
+/* Alim DJ 1 */
+#c55{right: -219px;bottom: 932px;}     /* DJ1-1 */
+#c56{right: -178px;bottom: 67px;}     /* x1-1 */
+
+#c57{right: -258px;bottom: 932px;}      /* DJ1-3 */
+#c58{right: -188px;bottom: 67px;}     /* x1-2 */
+
+#c59{right: -298px;bottom: 932px;}     /* DJ1-5 */
+#c60{right: -200px;bottom: 67px;}     /* x1-3 */

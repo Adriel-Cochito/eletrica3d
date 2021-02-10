@@ -1,0 +1,138 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: tomato;
+
+}
+footer {
+    padding-top: 70px;
+}
+.row {
+    margin-top: 20px;
+}
+h4 {
+    text-align: center;
+    margin: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding: 100px;
+}
+
+ /* Banner Header de IMG e Titulo e Descricao*/
+/* .texto_banner_titulo {    
+} */
+/* Banner Header de IMG e Titulo e Descricao*/
+/* .card-body {     
+  
+} */
+.col-md-8 {      /* Banner Header de IMG e Titulo e Descricao*/
+    margin-top: 5%;
+}
+.r2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#card_titulo_dispositivos {
+    background: rgb(52,58,64);
+    background: linear-gradient(180deg, rgba(52,58,64,1) 45%, rgba(7,15,111,1) 100%);
+    color: white;
+}
+
+#a_header {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+}
+#a_header:hover {
+    text-decoration: none;
+    text-shadow: 0.5px 0.5px 0.5px rgb(4, 0, 255);
+    color: rgb(246, 246, 255);
+}
+
+/* ----------  3D Visualização ------------ */
+/*                                    */
+
+#iframe {
+    width: 90%;
+    height: 500px;
+    align-content: center;
+/*     background-color: aqua; */
+    display: flex;
+    float: inline-start;
+}
+#card-partidas {
+    margin: 20px;
+    border-radius: 10px;
+}
+#r1 {
+    /* background-color: rgba(180, 180, 180, 0.274); */
+    margin-bottom: 20px;
+}
+
+/* ----------  HOME HTML ------------ */
+/*                                    */
+
+.titulos_home {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+/* ----------  PARTIDAS HTML ------------ */
+/*                                       */
+
+.dropdown {
+    margin: 10px;
+}
+
+.diagrama_img {
+    width: 99%;
+    height: auto;
+    margin: 0px;
+    border: 2px solid #616161;
+}
+.diagrama_pdf {
+    width: 99%;
+    height: 500px;
+    margin: 0px;
+    border: 2px solid #616161;
+}
+
+/* ----------  DISPOSITIVOS HTML ------------ */
+/*                                           */
+
+
+.cards {
+    background-color: rgba(180, 180, 180, 0.274);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ver3d {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#nav-tab {
+    margin-left: 20px;
+}
+
+#card_disp_und {
+    background-color: white;
+   /*  padding: 50px; */
+    min-width: 200px;
+    max-width: 300px;
+   /*  transform: scale(0.7); */
+}
+
+#card_disp_und:hover {
+    transition:  0.7s;
+    background-color: rgb(52,58,64);
+    color: white;
+    bottom: 5px;
+}
+
