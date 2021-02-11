@@ -198,7 +198,8 @@ function chamaResultado() {
         '<tr> <td>Ligação de circuito: </td> <td>Parcial</td> </tr>'+
         '<tr> <td>Local: </td> <td>Painel Industrial com Motor</td> </tr>'+
     '</table>'+
-    '<br><Br><hr>';
+    '<br><br><hr>'+
+    '<a class="avaliar" href="formulario.html" target="_blank">Avaliar / Feedback</a> <br> <br></br>';
     document.getElementById('div_resultado_simulador').innerHTML = resultado;
 }
 

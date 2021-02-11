@@ -47,6 +47,9 @@
       color: red; */
       text-align: center;
   }
+.forms {
+  width: 100%;
+}
 
   .conexao2 {
     width: 30px;
@@ -184,7 +187,25 @@ object {
     border-radius: 5px;
     transform: scale(1.5);
     margin: 20px;
-    padding: 5px;
+    padding: 10px;
+}
+.avaliar {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  background-color: #007BFF;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  padding: 10px;
+  float: right;
+}
+
+.avaliar:hover {
+  background-color: #005fc5;
+  color: white;
+  text-decoration: none;
 }
 
 #btn_iniciar {
