@@ -19,100 +19,101 @@ img {
 
 
 /* Dj p/Contator */
-#c1{right: -270px;bottom: 420px;}
-#c2{right: -250px;bottom: 149px;}
+#c1{right: -270px;bottom: 420px;}      /* DJ1-2 */
+#c2{right: -250px;bottom: 149px;}      /* K1-1 */
 
-#c3{right: -297px;bottom: 420px;}
-#c4{right: -273px;bottom: 149px;}
+#c3{right: -297px;bottom: 420px;}      /* DJ1-4 */
+#c4{right: -273px;bottom: 149px;}      /* K1-3 */
 
-#c5{right: -327px;bottom: 420px;}
-#c6{right: -295px;bottom: 149px;}
+#c5{right: -327px;bottom: 420px;}      /* DJ1-6 */
+#c6{right: -295px;bottom: 149px;}      /* K1-5 */
 
 
 /* RT p/Borne */
-#c7{right: -488px;bottom: 376px;}
-#c8{right: -497px;bottom: 120px;}
+#c7{right: -488px;bottom: 376px;}      /* RT-2 */
+#c8{right: -497px;bottom: 120px;}      /* X1-4 */
 
-#c9{right: -512px;bottom: 376px;}
-#c10{right: -507px;bottom: 120px;}
+#c9{right: -512px;bottom: 376px;}      /* RT-4 */
+#c10{right: -507px;bottom: 120px;}      /* X1-5 */
 
-#c11{right: -537px;bottom: 377px;}
-#c12{right: -517px;bottom: 121px;}
+#c11{right: -537px;bottom: 377px;}      /* RT-6 */
+#c12{right: -517px;bottom: 121px;}      /* X1-6 */
 
 
 /* Alim. Dj Comando */
-#c13{right: -100px;bottom: 407px;}
-#c14{right: -455px;bottom: 405px;}
+#c13{right: -100px;bottom: 407px;}      /* DJ1-1 */
+#c14{right: -455px;bottom: 405px;}      /* DJ2-1 */
 
-#c15{right: -139px;bottom: 407px;}
-#c16{right: -493px;bottom: 406px;}
+#c15{right: -139px;bottom: 407px;}      /* DJ1-3 */
+#c16{right: -493px;bottom: 406px;}      /* DJ2-3 */
 
 
 /* Dj2 p/ TF */
-#c17{right: -485px;bottom: 279px;}
-#c18{right: -627px;bottom: 312px;}
+#c17{right: -485px;bottom: 279px;}      /* DJ2-2 */
+#c18{right: -627px;bottom: 312px;}      /* TF1-1 */
 
-#c19{right: -525px;bottom: 279px;}
-#c20{right: -645px;bottom: 312px;}
+#c19{right: -525px;bottom: 279px;}      /* DJ2-4 */
+#c20{right: -645px;bottom: 312px;}      /* TF1-2 */
 
 /* TF p/ DJ3 */
-#c21{right: -649px;bottom: 282px;}
-#c22{right: -745px;bottom: 399px;}
+#c21{right: -649px;bottom: 282px;}      /* TF1-3 */
+#c22{right: -745px;bottom: 399px;}      /* DJ3-1 */
 
-#c23{right: -663px;bottom: 282px;}
-#c24{right: -779px;bottom: 399px;}
+#c23{right: -663px;bottom: 282px;}      /* TF1-4 */
+#c24{right: -779px;bottom: 399px;}      /* DJ3-3 */
 
 
 /* DJ3 p/ RT e Borne*/
-#c25{right: -105px;bottom: 282px;}
-#c26{right: -908px;bottom: 851px;}
+#c25{right: -105px;bottom: 282px;}       /* RT-A2 */
+#c26{right: -908px;bottom: 851px;}      /* DJ3-4 */
 
-#c27{right: -236px;bottom: 107px;}
-#c28{right: -788px;bottom: 926px;}
+#c27{right: -236px;bottom: 107px;}      /* X1-7 */
+#c28{right: -788px;bottom: 926px;}      /* DJ3-2 */
 
-#c29{right: -356px;bottom: 109px;}
-#c30{right: -820px;bottom: 926px;}
+#c29{right: -356px;bottom: 109px;}      /* X1-17 */
+#c30{right: -820px;bottom: 926px;}      /* DJ3-4 */
 
 
 /* RT Ligacoes */
-#c31{right: -348px;bottom: 59px;}
-#c32{right: -290px;bottom: 517px;}
+#c31{right: -348px;bottom: 59px;}      /* X1-8 */
+#c32{right: -290px;bottom: 517px;}      /* RT-95 */
 
-#c33{right: -265px;bottom: 517px;}
-#c34{right: -275px;bottom: 517px;}
+#c33{right: -265px;bottom: 517px;}      /* RT-97 */
+#c34{right: -275px;bottom: 517px;}      /* RT-95 */
 
 
 /* Jump */
-#c35{right: -366px;bottom: 59px;}
-#c36{right: -472px;bottom: 60px;}       
+#c35{right: -366px;bottom: 59px;}       /* X1-9 */
+#c36{right: -472px;bottom: 60px;}      /* X1-16 */
 
 
 /* K1 */
-#c37{right: -341px;bottom: 516px;}      
-#c38{right: -241px;bottom: 763px;}      
+#c37{right: -341px;bottom: 516px;}      /* RT-96 */
+#c38{right: -241px;bottom: 763px;}      /* K1-21 */
 
-#c39{right: -344px;bottom: 762px;}      
-#c40{right: -241px;bottom: 763px;}      
+#c39{right: -344px;bottom: 762px;}      /* K1-43 */
+#c40{right: -241px;bottom: 763px;}      /* K1-21 */
 
 #c41{right: -344px;bottom: 762px;}      /* K1-43 */
 #c42{right: -352px;bottom: 61px;}       /* x1-10 */
 
-#c43{right: -234px;bottom: 762px;}     
-#c44{right: -372px;bottom: 61px;}  
+#c43{right: -234px;bottom: 762px;}     /* K1-13 */
+#c44{right: -372px;bottom: 61px;}      /* X1-11 */
 
-#c45{right: -222px;bottom: 827px;}      
-#c46{right: -184px;bottom: 673px;}      
+#c45{right: -222px;bottom: 827px;}      /* K1-A1 */
+#c46{right: -184px;bottom: 673px;}      /* K1-14 */
 
-#c47{right: -222px;bottom: 827px;}      
+#c47{right: -222px;bottom: 827px;}      /* K1-A1 */
 #c48{right: -390px;bottom: 61px;}       /* x1-12 */
 
 #c49{right: -249px;bottom: 672px;}      /* k1-22 */
 #c50{right: -408px;bottom: 61px;}     /* x1-13 */
 
-#c51{right: -325px;bottom: 672px;}
+#c51{right: -325px;bottom: 672px;}      /* K1-44 */
 #c52{right: -425px;bottom: 61px;}     /* x1-14 */
 
-#c53{right: -212px;bottom: 504px;}
+/* RT */
+#c53{right: -212px;bottom: 504px;}      /* RT-98 */
 #c54{right: -441px;bottom: 62px;}     /* x1-15 */
 
 
