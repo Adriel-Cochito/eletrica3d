@@ -66,6 +66,18 @@ iframeDiversos[6] = '<div id="iframe">' +
 iframeDiversos[7] = '<div id="iframe">' +
     '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd9685b8f47edcd60eb2d?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
     '</div>';
+iframeDiversos[8] = '<div id="iframe">' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH9285eQTcf875d3c5398610647a4d7e029a?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
+    '</div>';
+iframeDiversos[9] = '<div id="iframe">' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH9285eQTcf875d3c539433d1f47c0563570?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
+    '</div>';
+iframeDiversos[10] = '<div id="iframe">' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH9285eQTcf875d3c539073983207c42032d?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
+    '</div>';
+iframeDiversos[11] = '<div id="iframe">' +
+    '<iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH9285eQTcf875d3c539efde70b4404f6c4a?mode=embed" width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>' +
+    '</div>';
 var descricaoDiversos = new Array()
 
 descricaoProtecao[0] = "É um dispositivo de proteção";
@@ -90,6 +102,10 @@ descricaoDiversos[4] = "Controlador Lógico Programável, usado para criar contr
 descricaoDiversos[5] = "Transformador de Tensão 220V - 24V, para tensão reduzida para comando";
 descricaoDiversos[6] = "Temporizador para controle de comandos";
 descricaoDiversos[7] = "Com todas as peças internas e externas em uma montagem";
+descricaoDiversos[8] = "Transmissor de vazão (FT - Flow Transmitter)";
+descricaoDiversos[9] = "Transmissor Indicador de Pressão (PIT - Pressure Indicator Transmitter)";
+descricaoDiversos[10] = "Medidor de nivel (LT - Level Transmitter)";
+descricaoDiversos[11] = "Termopar PT100, transmissor de temperatura (TT - Temperature Transmitter)";
 
 
 
@@ -118,7 +134,11 @@ const lista_diversa = [
     { id: 4, tipo: "PLC", nome: 'Logo Siemens', link: iframeDiversos[4], img: "logo_siemens.png", lista: 2, descricao: descricaoDiversos[4]},
     { id: 5, tipo: "Transformador", nome: 'Transformador 220v-24V', link: iframeDiversos[5], img: "transformador.jpg", lista: 2, descricao: descricaoDiversos[5]},
     { id: 6, tipo: "Temporizador ", nome: 'Temporizador JTRB', link: iframeDiversos[6], img: "temporizador_jtrb.jpg", lista: 2, descricao: descricaoDiversos[6]},
-    { id: 7, tipo: "Motor Trifásico ", nome: 'Motor completo', link: iframeDiversos[7], img: "motor_explode.jpg", lista: 2, descricao: descricaoDiversos[7]}
+    { id: 7, tipo: "Motor Trifásico ", nome: 'Motor completo', link: iframeDiversos[7], img: "motor_explode.jpg", lista: 2, descricao: descricaoDiversos[7]},
+    { id: 8, tipo: "Medidor de vazão ", nome: 'Medidor de vazão', link: iframeDiversos[8], img: "medidor_vazao.jpg", lista: 2, descricao: descricaoDiversos[8]},
+    { id: 9, tipo: "Medidor de Pressão ", nome: 'Medidor de Pressão', link: iframeDiversos[9], img: "medidor_pressao.jpg", lista: 2, descricao: descricaoDiversos[9]},
+    { id: 10, tipo: "Medidor de Nível ", nome: 'Medidor de Nível', link: iframeDiversos[10], img: "medidor_nivel.jpg", lista: 2, descricao: descricaoDiversos[10]},
+    { id: 11, tipo: "Termopar", nome: 'Transmissor de temperatura', link: iframeDiversos[11], img: "transmissor_temperatura.jpg", lista: 2, descricao: descricaoDiversos[11]}
 
 ];
 
