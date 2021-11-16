@@ -135,10 +135,10 @@ const lista_diversa = [
     { id: 5, tipo: "Transformador", nome: 'Transformador 220v-24V', link: iframeDiversos[5], img: "transformador.JPG", lista: 2, descricao: descricaoDiversos[5]},
     { id: 6, tipo: "Temporizador ", nome: 'Temporizador JTRB', link: iframeDiversos[6], img: "temporizador_jtrb.jpg", lista: 2, descricao: descricaoDiversos[6]},
     { id: 7, tipo: "Motor Trifásico ", nome: 'Motor completo', link: iframeDiversos[7], img: "motor_explode.jpg", lista: 2, descricao: descricaoDiversos[7]},
-    { id: 8, tipo: "Medidor de vazão ", nome: 'Medidor de vazão', link: iframeDiversos[8], img: "medidor_vazao.jpg", lista: 2, descricao: descricaoDiversos[8]},
-    { id: 9, tipo: "Medidor de Pressão ", nome: 'Medidor de Pressão', link: iframeDiversos[9], img: "medidor_pressao.jpg", lista: 2, descricao: descricaoDiversos[9]},
-    { id: 10, tipo: "Medidor de Nível ", nome: 'Medidor de Nível', link: iframeDiversos[10], img: "medidor_nivel.jpg", lista: 2, descricao: descricaoDiversos[10]},
-    { id: 11, tipo: "Termopar", nome: 'Transmissor de temperatura', link: iframeDiversos[11], img: "transmissor_temperatura.jpg", lista: 2, descricao: descricaoDiversos[11]}
+    { id: 8, tipo: "Transmissor Indicador de vazão ", nome: 'Medidor de vazão', link: iframeDiversos[8], img: "medidor_vazao.jpg", lista: 2, descricao: descricaoDiversos[8]},
+    { id: 9, tipo: "Transmissor Indicador de Pressão ", nome: 'Medidor de Pressão', link: iframeDiversos[9], img: "medidor_pressao.jpg", lista: 2, descricao: descricaoDiversos[9]},
+    { id: 10, tipo: "Transmissor nivel ", nome: 'Medidor de Nível', link: iframeDiversos[10], img: "medidor_nivel.jpg", lista: 2, descricao: descricaoDiversos[10]},
+    { id: 11, tipo: "Transmissor de Temperatura", nome: 'Termopar PT100', link: iframeDiversos[11], img: "transmissor_temperatura.jpg", lista: 2, descricao: descricaoDiversos[11]}
 
 ];
 
