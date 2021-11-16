@@ -132,7 +132,7 @@ const lista_diversa = [
     { id: 2, tipo: "Conexão", nome: 'Conector Sindal', link: iframeDiversos[2], img: "conector_sindal.jpg", lista: 2, descricao: descricaoDiversos[2]},
     { id: 3, tipo: "Soft Starter", nome: 'SSW 05', link: iframeDiversos[3], img: "ssw_05.jpg", lista: 2, descricao: descricaoDiversos[3]},
     { id: 4, tipo: "PLC", nome: 'Logo Siemens', link: iframeDiversos[4], img: "logo_siemens.png", lista: 2, descricao: descricaoDiversos[4]},
-    { id: 5, tipo: "Transformador", nome: 'Transformador 220v-24V', link: iframeDiversos[5], img: "transformador.jpg", lista: 2, descricao: descricaoDiversos[5]},
+    { id: 5, tipo: "Transformador", nome: 'Transformador 220v-24V', link: iframeDiversos[5], img: "transformador.JPG", lista: 2, descricao: descricaoDiversos[5]},
     { id: 6, tipo: "Temporizador ", nome: 'Temporizador JTRB', link: iframeDiversos[6], img: "temporizador_jtrb.jpg", lista: 2, descricao: descricaoDiversos[6]},
     { id: 7, tipo: "Motor Trifásico ", nome: 'Motor completo', link: iframeDiversos[7], img: "motor_explode.jpg", lista: 2, descricao: descricaoDiversos[7]},
     { id: 8, tipo: "Medidor de vazão ", nome: 'Medidor de vazão', link: iframeDiversos[8], img: "medidor_vazao.jpg", lista: 2, descricao: descricaoDiversos[8]},
