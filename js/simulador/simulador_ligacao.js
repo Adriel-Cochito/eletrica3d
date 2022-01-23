@@ -23,6 +23,7 @@ var conexao_a, conexao_b;
 var k1, dj1, dj2, dj3, rt, borne, tf;
 var num_avanca = 28;
 var a, b;
+var nome_usuario;
 
 k1 = dj1 = dj2 = dj3 = borne = rt = tf = 0;
 num_conexao = 1;
@@ -122,7 +123,7 @@ function verificaReset() {
             marca_dispositivo_errado(b);
         }
         
-        window.alert("Par de conexões erradas! Acertou: " + contagem + " Conexões")
+        window.alert("Par de conexões erradas! Acertou: " + contagem + " Conexões de 2")
         resetar();
     }
 }
@@ -258,10 +259,11 @@ function chamaResultado() {
 
     resultado = '<h3>Relatório de Prática</h3>' +
         '<table class="relatorio">' +
+        '<tr> <td>Nome do usuário: </td> <td class="r_nome_usuario">' + nome_usuario + ' </td> </tr>' +
         '<tr> <td>Tempo de conclusão:</td> <td class="r_tempo">' + tempo_final_minutos + ' min ' + tempo_final_segundos + ' Segundos</td> </tr>' +
         '<tr> <td>Tempo médio por conexão: </td> <td class="r_tx_axerto">' + tempo_medio_conexao + ' Segundos </td> </tr>' +
         '<tr> <td>Conexões erradas: </td> <td class="r_erro">' + clicks + ' </td></tr>' +
-        '<tr> <td>Taxa de acerto: </td> <td class="r_tx_axerto">' + click_taxa_acerto + '% </td> </tr>' +
+        '<tr> <td>Taxa de acerto: </td> <td class="r_tx_acerto">' + click_taxa_acerto + '% </td> </tr>' +
         '<tr> <td>Data: </td> <td class="r_tx_axerto">' + dataAtualFormatada()+ '  </td> </tr>' +
         '</table>' +
         '<h3>Relatório de erros:</h3>' +
@@ -291,12 +293,11 @@ function chamaResultado() {
 
 
 
-
-
 function iniciar() {
     carregaImagem();
     carregaHtml();
      /* avancaX(); */
+    nome_usuario=prompt("Digite seu nome:");
     window.alert("Iniciando")
 };
 
