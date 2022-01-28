@@ -64,7 +64,7 @@ function criar_html(lista, itens) {
         for (let i = 0; i < lista.length; i++) {
             itens[i] = (' <div class="col mb-4">' +
             '<div id="card_disp_und" class="card h-100"  onclick="onBtnClickedPartidas(' + lista[i].id + ')">' +
-            '<img src="img/partidas/'+lista[i].img +'" class="card-img-top" alt="...">' +
+            '<img src="img/painel.png" class="card-img-top" alt="...">' +
             '<div class="card-body">' +
             '<h5 class="card-title">' + lista[i].nome + '</h5> <hr>' +
             // '<p> <b>Tipo: </b> '+ lista[i].tipo +' </p> <hr>' +
