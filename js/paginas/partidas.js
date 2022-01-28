@@ -33,29 +33,58 @@ function onBtnClickedPartidas(id) {
     /* class="card-img-top" */
     saida = '<div class="card mb-3" id="card-partidas">' +
         '<div class="card-body">' +
-        '<h3 class="card-title">' + lista_partidas[id-1].nome + '</h3>' +
-        '<p class="card-text"><b> Descrição: </b>' + lista_partidas[id-1].descricao + '</p>' + 
+        '<h3 class="card-title">' + lista_partidas[id - 1].nome + '</h3>' +
+        '<p class="card-text"><b> Descrição: </b>' + lista_partidas[id - 1].descricao + '</p>' +
         /* '<div class="diagrama"><h5> Diagrama:</h5> <img  src="img/diagramas/pd_dg.jpg" class="card-img" alt="..."></div>'+ */
-        ' <h5> Diagrama:</h5> <object class="diagrama_pdf" data="img/diagramas/'+ lista_partidas[id-1].diagrama+'.pdf" type="application/pdf">' +
-            '<div class="diagrama_img"> <img  src="img/diagramas/'+ lista_partidas[id - 1].diagrama+'.jpg" class="card-img" alt="..."></div>'+
-        '</object>'+
+        ' <h5> Diagrama:</h5> <object class="diagrama_pdf" data="img/diagramas/' + lista_partidas[id - 1].diagrama + '.pdf" type="application/pdf">' +
+        '<div class="diagrama_img"> <img  src="img/diagramas/' + lista_partidas[id - 1].diagrama + '.jpg" class="card-img" alt="..."></div>' +
+        '</object>' +
         '<p><b> Dicas: </b></p> <p> - Clique 2 vezes no componente que deseja ver melhor para girar a câmera em seu redor</p> <p>- Visualize em tela cheia</p>' +
         '<h5>Visualização 3D:</h5>' + lista_partidas[id - 1].link +
         '<h3 class=""></h3>' +
-/*         '<h5 class="card-title">' + lista_partidas[id-1].nome + '</h5>'+
-        '<p class="card-text"><b> Descrição: </b>' + lista_partidas[id-1].descricao + '</p>' + */
+        /*         '<h5 class="card-title">' + lista_partidas[id-1].nome + '</h5>'+
+                '<p class="card-text"><b> Descrição: </b>' + lista_partidas[id-1].descricao + '</p>' + */
         '</div></div></div>'
 
     document.getElementById('r1').innerHTML = saida;
 };
 
-for (let i = 0; i < lista_partidas.length; i++) {
-    menuTitulos[i] = '<a class="dropdown-item" href="#" onclick="onBtnClickedPartidas(' + lista_partidas[i].id + ')">' + lista_partidas[i].nome + '</a>'
+// for (let i = 0; i < lista_partidas.length; i++) {
+//     menuTitulos[i] = '<a class="dropdown-item" href="#" onclick="onBtnClickedPartidas(' + lista_partidas[i].id + ')">' + lista_partidas[i].nome + '</a>'
 
+// }
+
+// document.getElementById('menu-partidas').innerHTML = '<div class="dropdown">' +
+//     '<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' +
+//     'Escolha o tipo de partida </a>' +
+//     '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">' +
+//     menuTitulos.join('') + '</div></div>'
+
+function criar_html(lista, itens) {
+        for (let i = 0; i < lista.length; i++) {
+            itens[i] = (' <div class="col mb-4">' +
+            '<div id="card_disp_und" class="card h-100"  onclick="onBtnClickedPartidas(' + lista[i].id + ')">' +
+            '<img src="img/partidas/'+lista[i].img +'" class="card-img-top" alt="...">' +
+            '<div class="card-body">' +
+            '<h5 class="card-title">' + lista[i].nome + '</h5> <hr>' +
+            // '<p> <b>Tipo: </b> '+ lista[i].tipo +' </p> <hr>' +
+            '<p class="card-text"><b> Descrição: </b>' + lista[i].descricao + '</p>' +
+            '</div>' +
+            '<p class="ver3d"><a class="btn btn-lg btn-primary"  role="button">Ver 3D</a></p>' +
+            '</div>' +
+            '</div>'
+        );
+} }
+
+criar_html(lista_partidas, partidas);
+function fechar(lista) {
+    lista = ("<div class='row row-cols-1 row-cols-md-4'>" + lista.join('') + "</div");
+    return lista;
 }
 
-document.getElementById('menu-partidas').innerHTML = '<div class="dropdown">' +
-    '<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' +
-    'Escolha o tipo de partida </a>' +
-    '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">' +
-    menuTitulos.join('') + '</div></div>'
+function onBtnClickedtodos() {
+    document.getElementById('r1').innerHTML = fechar(partidas);
+};
+
+window.onload = onBtnClickedtodos();
+
