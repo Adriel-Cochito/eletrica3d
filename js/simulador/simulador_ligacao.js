@@ -292,12 +292,14 @@ function chamaResultado() {
 }
 
 
-
 function iniciar() {
     carregaImagem();
     carregaHtml();
      /* avancaX(); */
-    nome_usuario=prompt("Digite seu nome:");
+     while (nome_usuario == null || nome_usuario == "") {
+        nome_usuario=prompt("Digite seu nome:");
+     }
+    
     window.alert("Iniciando")
 };
 
