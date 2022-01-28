@@ -1,4 +1,3 @@
-
 var iframePartida = new Array()
 iframePartida[0] = '<div class="card-img-top" > <iframe src="https://myhub.autodesk360.com/ue2c73da7/shares/public/SH56a43QTfd62c1cd968561b6b26919c4f92?mode=embed"' +
     'width="100%" height="500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe> </div';
@@ -17,10 +16,10 @@ descricaoPartida[3] = "É uma partida que utiliza um CLP para controlar o motor 
 
 
 const lista_partidas = [
-    { id: 1, nome: 'Partida direta', link: iframePartida[0], descricao: descricaoPartida[0], diagrama: "pd_dg" },
-    { id: 2, nome: 'Partida direta com reversão Intercalada', link: iframePartida[1], descricao: descricaoPartida[1], diagrama: "pd_rev_intercalada_dg"  },
-    { id: 3, nome: 'Partida estrela triângulo temporizada', link: iframePartida[2], descricao: descricaoPartida[2], diagrama: "part_estrela_triangulo_temp"  },
-    { id: 4, nome: 'Partida direta com CLP', link: iframePartida[3], descricao: descricaoPartida[3], diagrama: "partida_direta_clp"  }
+    { id: 1, img: "partida_direta.png",  nome: 'Partida direta', link: iframePartida[0], descricao: descricaoPartida[0], diagrama: "pd_dg" },
+    { id: 2, img: "partida_direta_reversao.png", nome: 'Partida direta com reversão Intercalada', link: iframePartida[1], descricao: descricaoPartida[1], diagrama: "pd_rev_intercalada_dg"  },
+    { id: 3, img: "partida_estrela_triangulo.png", nome: 'Partida estrela triângulo temporizada', link: iframePartida[2],  descricao: descricaoPartida[2], diagrama: "part_estrela_triangulo_temp"  },
+    { id: 4, img: "partida_direta_clp.png", nome: 'Partida direta com CLP', link: iframePartida[3], descricao: descricaoPartida[3], diagrama: "partida_direta_clp"  }
 ];
 
 var partidas = new Array();
@@ -64,7 +63,7 @@ function criar_html(lista, itens) {
         for (let i = 0; i < lista.length; i++) {
             itens[i] = (' <div class="col mb-4">' +
             '<div id="card_disp_und" class="card h-100"  onclick="onBtnClickedPartidas(' + lista[i].id + ')">' +
-            '<img src="img/painel.png" class="card-img-top" alt="...">' +
+            '<img src="img/partidas/'+lista[i].img+'" class="card-img-top" alt="...">' +
             '<div class="card-body">' +
             '<h5 class="card-title">' + lista[i].nome + '</h5> <hr>' +
             // '<p> <b>Tipo: </b> '+ lista[i].tipo +' </p> <hr>' +
@@ -73,7 +72,8 @@ function criar_html(lista, itens) {
             '<p class="ver3d"><a class="btn btn-lg btn-primary"  role="button">Ver 3D</a></p>' +
             '</div>' +
             '</div>'
-        );
+            
+        ); console.log(lista[i].img);
 } }
 
 criar_html(lista_partidas, partidas);
