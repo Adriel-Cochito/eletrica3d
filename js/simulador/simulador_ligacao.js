@@ -25,9 +25,19 @@ var num_avanca = 28;
 var a, b;
 var nome_usuario;
 
+var todosResultados = new Array();
+var listaResultado = new Array();
+
+
 k1 = dj1 = dj2 = dj3 = borne = rt = tf = 0;
+
 num_conexao = 1;
 num_img = 1;
+
+// Original: 
+// num_conexao = 1;
+// num_img = 1;   Original
+// num_img = 38 pra acabar mais rapido
 
 
 
@@ -251,6 +261,7 @@ function chamaResultado() {
     tempo_final = tempo - tempo_inicial
     tempo_final_minutos = tempo_final / 60
     tempo_final_segundos = tempo_final % 60
+    console.log('Tempo em segundos: ' + tempo)
 
     tempo_medio_conexao = tempo_final / 60
 
@@ -287,22 +298,227 @@ function chamaResultado() {
         '<tr> <td>Ligação de circuito: </td> <td>Parcial</td> </tr>' +
         '<tr> <td>Local: </td> <td>Painel Industrial com Motor</td> </tr>' +
         '</table>' +
-        '<br><br><hr>';
+        '<br><br><hr>'+
+        '<h3>Evolução do usuario</h3>'+
+        '<div id="grafico">'+
+        '<div id="chart" class="chart"></div>'+
+        '<div id="chart2" class="chart"></div>'+
+        '<div id="chart3" class="chart"></div>'+
+        '</div>;'
+
     document.getElementById('div_resultado_simulador').innerHTML = resultado;
+    salvaResultado();
 }
+
+function salvaResultado() {
+    // if (localStorage.getItem(nome_usuario) === null) {
+    // } else {
+    //   listaResultado = localStorage.getItem(nome_usuario);
+    // }
+    
+     
+    
+    //   console.log(nome_usuario + ' : ' , todosResultados);
+    
+    if (localStorage.getItem(nome_usuario) === null) {
+        listaResultado = [{tempo_final: tempo_final_minutos + ' min ' + tempo_final_segundos + ' Segundos',
+        tempo_medio_conexao: tempo_medio_conexao,
+        tempo_final_minutos: tempo_final_minutos,
+        tempo_final_segundos: tempo,
+        clicks: clicks,
+        click_taxa_acerto: click_taxa_acerto,
+        dj1: dj1,
+        dj2: dj2,
+        dj3: dj3,
+        tf: tf,
+        k1: k1,
+        rt: rt,
+        borne: borne
+     }];
+
+        todosResultados= listaResultado;
+    } else {
+        listaResultado = {tempo_final: tempo_final_minutos + ' min ' + tempo_final_segundos + ' Segundos',
+        tempo_medio_conexao: tempo_medio_conexao,
+        tempo_final_minutos: tempo_final_minutos,
+        tempo_final_segundos: tempo,
+        clicks: clicks,
+        click_taxa_acerto: click_taxa_acerto,
+        dj1: dj1,
+        dj2: dj2,
+        dj3: dj3,
+        tf: tf,
+        k1: k1,
+        rt: rt,
+        borne: borne
+     };
+
+        todosResultados = localStorage.getItem(nome_usuario);
+        todosResultados = JSON.parse(todosResultados);
+        todosResultados.push(listaResultado);
+    }
+    
+    
+
+    localStorage.setItem(nome_usuario, JSON.stringify(todosResultados));
+    // todosResultados = localStorage.getItem(nome_usuario);
+
+    console.log(todosResultados);
+    drawChart();
+};
+// todosResultados = localStorage.getItem('joao');
+// todosResultados = JSON.parse(todosResultados);
+// console.log(todosResultados[1].clicks);
+
+
+
+
+    google.charts.load('current', {'packages':['line']});
+    google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', '');
+      data.addColumn('number', 'Taxa de acerto');
+
+      var data2 = new google.visualization.DataTable();
+      data2.addColumn('number', '');
+      data2.addColumn('number', 'Tempo');
+
+      var data3 = new google.visualization.DataTable();
+      data3.addColumn('number', '');
+      data3.addColumn('number', 'Tempo');
+    //   data.addColumn('number', 'The Avengers');
+    //   data.addColumn('number', 'Transformers: Age of Extinction');
+
+    //   data.addRows([
+    //     [1,  37.8],
+    //     [2,  30.9],
+    //     [3,  25.4],
+    //     [4,  11.7]
+    //   ]);
+    nome_usuario = localStorage.getItem('nome_usuario');
+    
+    todosResultados = localStorage.getItem(nome_usuario);
+    todosResultados = JSON.parse(todosResultados);
+    
+      for (let i = 0; i < todosResultados.length; i++) {
+        data.addRows([
+        [i,  parseInt(todosResultados[i].click_taxa_acerto)],
+      ]);  
+      console.log(parseInt(todosResultados[i].click_taxa_acerto));
+      }
+
+      for (let i = 0; i < todosResultados.length; i++) {
+        data2.addRows([
+        [i,  parseInt(todosResultados[i].tempo_final_minutos)],
+      ]);  
+      console.log(parseInt(todosResultados[i].tempo_final_minutos));
+      }
+
+      for (let i = 0; i < todosResultados.length; i++) {
+        data3.addRows([
+        [i,  parseInt(todosResultados[i].tempo_final_segundos)],
+      ]);  
+      console.log(parseInt(todosResultados[i].tempo_final_segundos));
+      }
+
+
+      var options = {
+        chart: {
+          title: 'Taxa de acerto',
+          subtitle: 'De 0 a 100%'
+        },
+        width: 800,
+        height: 400,
+        axes: {
+          x: {
+            0: {side: 'top'}
+          }
+        }
+      };
+
+      var options2 = {
+        chart: {
+          title: 'Tempo',
+          subtitle: 'Em minutos'
+        },
+        width: 800,
+        height: 400,
+        axes: {
+          x: {
+            0: {side: 'top'}
+          }
+        }
+      };
+
+      var options3 = {
+        chart: {
+          title: 'Tempo',
+          subtitle: 'Em segundos'
+        },
+        width: 800,
+        height: 400,
+        axes: {
+          x: {
+            0: {side: 'top'}
+          }
+        }
+      };
+
+      var chart = new google.charts.Line(document.getElementById('chart'));
+      chart.draw(data, google.charts.Line.convertOptions(options));
+
+      var chart2 = new google.charts.Line(document.getElementById('chart2'));
+      chart2.draw(data2, google.charts.Line.convertOptions(options2));
+
+      var chart3 = new google.charts.Line(document.getElementById('chart3'));
+      chart3.draw(data3, google.charts.Line.convertOptions(options3));
+    }
+// function indice() {
+//     todosResultados[todosResultados.length] = listaResultado;
+//     alert(todosResultados.length);
+// }
+
+// localStorage.clear();
+// console.log(nome_usuario + ' : ' , todosResultados);
+
+
+
+// nome_usuario = localStorage.getItem('nome_usuario');
+// alert("Valor:" + nome_usuario);
 
 
 function iniciar() {
     carregaImagem();
-    carregaHtml();
-     /* avancaX(); */
-     while (nome_usuario == null || nome_usuario == "") {
-        nome_usuario=prompt("Digite seu nome:");
-     }
+   
+    solicitaNome();
+    /* avancaX(); */
     
     window.alert("Iniciando")
 };
 
+function solicitaNome() {
+    nome_usuario = localStorage.getItem('nome_usuario');
+     if (nome_usuario == null) {
+        nome_usuario = ""
+     }
+        nome_usuario=prompt("Digite seu nome e sobrenome:", [nome_usuario]);
+        setName();
+      
+}
+
+function setName() {
+    localStorage.setItem("nome_usuario", nome_usuario);
+}
+
+if (localStorage.getItem(nome_usuario) == null || localStorage.getItem('nome_usuario') == null) {
+} else {
+    todosResultados = localStorage.getItem(nome_usuario);
+    todosResultados = JSON.parse(todosResultados);
+    drawChart();
+}
 
 document.getElementById('btn_iniciar').onclick = iniciar;
 
