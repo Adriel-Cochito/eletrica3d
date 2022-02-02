@@ -6,6 +6,7 @@
     <meta name="author" content="Elétrica 3D">
     <meta name="description" content="Componentes e partidas de motores em 3D, com simulador de prática de montagem de circuitos">
     <meta name="keywords" content="eletrica, 3d, partida, motor, simulador, simulação, eletricidade, industrial, automação, eletrônica, montagem, ligação, circuitos, painel, disjuntor, contator, botão, lâmpada"  >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/simulador.css" />
     <link rel="stylesheet" href="css/partida direta.css" />
 
@@ -19,6 +20,9 @@
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6XGLMGKMB"></script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -115,6 +119,13 @@
             </table>
             <br><Br><hr>
 
+              <h3>Evolução do usuario</h3>
+              <div id="grafico">
+                <div id="chart" class="chart"></div>
+                <div id="chart2" class="chart"></div>
+                <div id="chart3" class="chart"></div>
+              </div>
+              
             <hr> <h3> Diagrama:</h3>
             <object class="diagrama_pdf" data="img/simulador/partida direta/diagrama/pd_dg.pdf" type="application/pdf">
               <div class="diagrama_img"> <img  src="img/simulador/partida direta/diagrama/pd_dg.jpg" class="card-img" alt="diagrama"></div>
