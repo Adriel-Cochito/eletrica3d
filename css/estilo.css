@@ -60,6 +60,11 @@ h4 {
     background: linear-gradient(180deg, rgba(52,58,64,1) 45%, rgba(7,15,111,1) 100%);
     color: white;
 }
+
+.botao_resultado {
+  color: #005fc5;
+}
+
 .chart {
 /* height: 1000px; */
 padding: 50px;
