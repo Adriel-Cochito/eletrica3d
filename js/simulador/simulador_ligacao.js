@@ -33,7 +33,7 @@ var indiceResultado = 0;
 k1 = dj1 = dj2 = dj3 = borne = rt = tf = 0;
 
 num_conexao = 1;
-num_img = 38;
+num_img = 1;
 
 // Original: 
 // num_conexao = 1;
