@@ -27,12 +27,13 @@ var nome_usuario;
 
 var todosResultados = new Array();
 var listaResultado = new Array();
+var indiceResultado = 0;
 
 
 k1 = dj1 = dj2 = dj3 = borne = rt = tf = 0;
 
 num_conexao = 1;
-num_img = 1;
+num_img = 38;
 
 // Original: 
 // num_conexao = 1;
@@ -172,9 +173,8 @@ function retiraConexao() {
 
 function carregaDg() {
     num_dg += 1;
-    dg_html = ' <h5> Diagrama: PARTIDA DIRETA </h5> <object class="diagrama_pdf" data="img/simulador/partida direta/diagrama/pd_dg-' + num_dg + '.pdf" type="application/pdf">' +
+    dg_html = ' <h5> Diagrama: PARTIDA DIRETA </h5>' +
         '<div class="diagrama_img"> <img  src="img/simulador/partida direta/diagrama/pd_dg-' + num_dg + '.jpg" class="card-img" alt="..."></div>' +
-        '</object>' +
         '<hr>';
     document.getElementById('div_dg_simulador').innerHTML = dg_html;
     console.log("Id Diagrama:", num_dg);
@@ -250,7 +250,10 @@ function finaliza() {
 
         carregaImagem();
         retiraConexao();
+        salvaResultado();
+        indiceResultado = todosResultados.length-1;
         chamaResultado();
+        drawChart();
         window.alert("Parabéns! Prática concluída. Confira agora o relatório de prática.")
     }, 1000);
 }
@@ -258,36 +261,35 @@ function finaliza() {
 
 function chamaResultado() {
 
-    tempo_final = tempo - tempo_inicial
-    tempo_final_minutos = tempo_final / 60
-    tempo_final_segundos = tempo_final % 60
-    console.log('Tempo em segundos: ' + tempo)
+    todosResultados = localStorage.getItem(nome_usuario);
+    todosResultados = JSON.parse(todosResultados);
 
-    tempo_medio_conexao = tempo_final / 60
-
-    tempo_final_minutos = tempo_final_minutos.toFixed([0])
-    tempo_medio_conexao = tempo_medio_conexao.toFixed([2])
-
+    let i = indiceResultado;
+    let num = i+1;
+ 
     resultado = '<h3>Relatório de Prática</h3>' +
+        '<button id="btn_anterior" role="button" onclick="resultadoAnterior()" class="botao_resultado">Ver resultado anterior</button>'+
+        '<button id="btn_proximo" role="button" onclick="proximoResultado()" class="botao_resultado">Ver proximo resultado</button>'+
+        '<p> Resultado: '+ num +' de '+ todosResultados.length + '</p>'+
         '<table class="relatorio">' +
         '<tr> <td>Nome do usuário: </td> <td class="r_nome_usuario">' + nome_usuario + ' </td> </tr>' +
-        '<tr> <td>Tempo de conclusão:</td> <td class="r_tempo">' + tempo_final_minutos + ' min ' + tempo_final_segundos + ' Segundos</td> </tr>' +
-        '<tr> <td>Tempo médio por conexão: </td> <td class="r_tx_axerto">' + tempo_medio_conexao + ' Segundos </td> </tr>' +
-        '<tr> <td>Conexões erradas: </td> <td class="r_erro">' + clicks + ' </td></tr>' +
-        '<tr> <td>Taxa de acerto: </td> <td class="r_tx_acerto">' + click_taxa_acerto + '% </td> </tr>' +
+        '<tr> <td>Tempo de conclusão:</td> <td class="r_tempo">' + todosResultados[i].tempo_final+'</td> </tr>' +
+        '<tr> <td>Tempo médio por conexão: </td> <td class="r_tx_axerto">' + todosResultados[i].tempo_medio_conexao + ' Segundos </td> </tr>' +
+        '<tr> <td>Conexões erradas: </td> <td class="r_erro">' + todosResultados[i].clicks + ' </td></tr>' +
+        '<tr> <td>Taxa de acerto: </td> <td class="r_tx_acerto">' + todosResultados[i].click_taxa_acerto + '% </td> </tr>' +
         '<tr> <td>Data: </td> <td class="r_tx_axerto">' + dataAtualFormatada()+ '  </td> </tr>' +
         '</table>' +
         '<h3>Relatório de erros:</h3>' +
         '<table>' +
         '<th>Dispositivo</th>'+
         '<th>Numero de erros</th>'+
-        '<tr> <td>Disjuntor DJ1: </td> <td>'+dj1+'</td> </tr>' +
-        '<tr> <td>Disjuntor DJ2 : </td> <td>'+dj2+'</td> </tr>' +
-        '<tr> <td>Disjuntor DJ3: </td> <td>'+dj3+'</td> </tr>' +
-        '<tr> <td>Transformador TF1: </td> <td>'+tf+'</td> </tr>' +
-        '<tr> <td>Contator K1 : </td> <td>'+k1+'</td> </tr>' +
-        '<tr> <td>Relé térmico RT : </td> <td>'+rt+'</td> </tr>' +
-        '<tr> <td>Régua de Bornes x1 : </td> <td>'+borne+'</td> </tr>' +
+        '<tr> <td>Disjuntor DJ1: </td> <td>'+todosResultados[i].dj1+'</td> </tr>' +
+        '<tr> <td>Disjuntor DJ2 : </td> <td>'+todosResultados[i].dj2+'</td> </tr>' +
+        '<tr> <td>Disjuntor DJ3: </td> <td>'+todosResultados[i].dj3+'</td> </tr>' +
+        '<tr> <td>Transformador TF1: </td> <td>'+todosResultados[i].tf+'</td> </tr>' +
+        '<tr> <td>Contator K1 : </td> <td>'+todosResultados[i].k1+'</td> </tr>' +
+        '<tr> <td>Relé térmico RT : </td> <td>'+todosResultados[i].rt+'</td> </tr>' +
+        '<tr> <td>Régua de Bornes x1 : </td> <td>'+todosResultados[i].borne+'</td> </tr>' +
         '</table>' +
         '<br><br><hr>'+
         '<a class="avaliar" href="formulario.html" target="_blank">Avaliar / Feedback</a> <br> <br></br>' +
@@ -307,14 +309,35 @@ function chamaResultado() {
         '</div>;'
 
     document.getElementById('div_resultado_simulador').innerHTML = resultado;
-    salvaResultado();
+
+    if (i == 0 && i == todosResultados.length-1) {
+        document.getElementById("btn_proximo").style.display = "none";
+        document.getElementById("btn_anterior").style.display = "none";
+
+    } else if (i == todosResultados.length-1) {
+        document.getElementById("btn_proximo").style.display = "none";
+    } else if (i == 0) {
+        document.getElementById("btn_anterior").style.display = "none";
+    }
+    
 }
+
 
 function salvaResultado() {
     // if (localStorage.getItem(nome_usuario) === null) {
     // } else {
     //   listaResultado = localStorage.getItem(nome_usuario);
     // }
+
+    tempo_final = tempo - tempo_inicial
+    tempo_final_minutos = tempo_final / 60
+    tempo_final_segundos = tempo_final % 60
+    console.log('Tempo em segundos: ' + tempo)
+
+    tempo_medio_conexao = tempo_final / 60
+
+    tempo_final_minutos = tempo_final_minutos.toFixed([0])
+    tempo_medio_conexao = tempo_medio_conexao.toFixed([2])
     
      
     
@@ -364,7 +387,7 @@ function salvaResultado() {
     // todosResultados = localStorage.getItem(nome_usuario);
 
     console.log(todosResultados);
-    drawChart();
+    
 };
 // todosResultados = localStorage.getItem('joao');
 // todosResultados = JSON.parse(todosResultados);
@@ -520,9 +543,28 @@ if (localStorage.getItem(nome_usuario) == null || localStorage.getItem('nome_usu
     drawChart();
 }
 
+function proximoResultado() {
+    console.log('Resultado anterior: '+ indiceResultado+1)
+    indiceResultado = indiceResultado + 1;
+    chamaResultado();
+    
+}
+
+function resultadoAnterior() {
+    console.log('Resultado anterior: '+ indiceResultado-1)
+    indiceResultado = indiceResultado-1
+    chamaResultado();
+    
+}
+
+
 document.getElementById('btn_iniciar').onclick = iniciar;
 
 document.getElementById('div_img_simulador').onclick = contaClick;
 document.getElementById('btn_voltar').onclick = voltaImg;
 document.getElementById('btn_avancar').onclick = avancaImg;
+
 document.getElementsByClassName("conexao").onclick = verificaConexao;
+
+document.getElementById('btn_proximo').onclick = proximoResultado;
+document.getElementById('btn_anterior').onclick = resultadoAnterior;
